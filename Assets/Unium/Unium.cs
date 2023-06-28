@@ -125,7 +125,6 @@ namespace gw.unium
             Root.Add( "stats",  Stats.Singleton );
             Root.Add( "events", Events.Singleton );
         }
-
 #endif
     }
 }
