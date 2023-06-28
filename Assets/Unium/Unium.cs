@@ -134,7 +134,7 @@ namespace gw.unium
             }
         }
 
-        public static void AddGQLRouteHttp(string path, Route.RouteHandler handler)
+        public static void AddCustomRouteHttp(string path, Route.RouteHandler handler)
         {
             if (!string.IsNullOrEmpty(path) && handler != null)
             {
@@ -142,7 +142,7 @@ namespace gw.unium
             }
         }
 
-        public static void AddGQLRouteSocket(string path, Route.RouteHandler handler)
+        public static void AddCustomRouteSocket(string path, Route.RouteHandler handler)
         {
             if (!string.IsNullOrEmpty(path) && handler != null)
             {
