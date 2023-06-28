@@ -125,6 +125,30 @@ namespace gw.unium
             Root.Add( "stats",  Stats.Singleton );
             Root.Add( "events", Events.Singleton );
         }
+
+        public static void AddGQLRoot(string key, object value)
+        {
+            if (!string.IsNullOrEmpty(key) && value != null)
+            {
+                Root.Add(key, value);
+            }
+        }
+
+        public static void AddGQLRouteHttp(string path, Route.RouteHandler handler)
+        {
+            if (!string.IsNullOrEmpty(path) && handler != null)
+            {
+                RoutesHTTP.Add(path, handler);
+            }
+        }
+
+        public static void AddGQLRouteSocket(string path, Route.RouteHandler handler)
+        {
+            if (!string.IsNullOrEmpty(path) && handler != null)
+            {
+                RoutesSocket.Add(path, handler);
+            }
+        }
 #endif
     }
 }

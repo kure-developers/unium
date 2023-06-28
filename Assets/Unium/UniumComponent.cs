@@ -294,33 +294,6 @@ public class UniumComponent : MonoBehaviour
         }
     }
 
-
-    //----------------------------------------------------------------------------------------------------
-
-    public void AddGQLRoot(string key, object value)
-    {
-        if (!string.IsNullOrEmpty(key) && value != null)
-        {
-            Unium.Root.Add(key, value);
-        }
-    }
-
-    public void AddGQLRouteHttp(string path, Route.RouteHandler handler)
-    {
-        if (!string.IsNullOrEmpty(path) && handler != null)
-        {
-            Unium.RoutesHTTP.Add(path, handler);
-        }
-    }
-
-    public void AddGQLRouteSocket(string path, Route.RouteHandler handler)
-    {
-        if (!string.IsNullOrEmpty(path) && handler != null)
-        {
-            Unium.RoutesSocket.Add(path, handler);
-        }
-    }
-
 #endif
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////
