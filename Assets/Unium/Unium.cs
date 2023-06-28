@@ -126,13 +126,6 @@ namespace gw.unium
             Root.Add( "events", Events.Singleton );
         }
 
-        public static void AddGQLRoot(string key, object value)
-        {
-            if (!string.IsNullOrEmpty(key) && value != null)
-            {
-                Root.Add(key, value);
-            }
-        }
 #endif
     }
 }
